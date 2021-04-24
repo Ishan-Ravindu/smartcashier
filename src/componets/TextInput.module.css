@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  background: rgb(32, 26, 26);
+  border-radius: 10px;
+  color: white;
+  border: white 1px solid;
+  margin-bottom: 20px;
+}
+.input {
+  background: rgb(32, 26, 26);
+
+  border: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  padding-left: 5px;
+  outline: 0;
+}
+
+.icon {
+  color: white;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input:active {
+  border: none;
+}

@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+  color: blue;
+  text-transform: capitalize;
+}
+
+.navButton {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 4px;
+  border-color: aliceblue;
+  padding: 2px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
