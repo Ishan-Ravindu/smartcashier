@@ -4,7 +4,7 @@ import classes from "./CustomLink.module.css";
 function CustomLink({ label, to, activeOnlyWhenExact }) {
   let match = useRouteMatch({
     path: to,
-    exact: activeOnlyWhenExact,
+    // exact: activeOnlyWhenExact,
   });
 
   const selectedStyles = match

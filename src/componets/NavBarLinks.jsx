@@ -5,7 +5,7 @@ import CustomLink from "./CustomLink";
 function NavBarLinks({ selected = true }) {
   return (
     <div className={classes.container}>
-      <CustomLink to="/" activeOnlyWhenExact={true} label="Home" />
+      <CustomLink to="/home" activeOnlyWhenExact={true} label="Home" />
       <CustomLink to="/customer" activeOnlyWhenExact={true} label="customer" />
       <CustomLink to="/stock" activeOnlyWhenExact={true} label="stock" />
       <CustomLink
