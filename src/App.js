@@ -31,6 +31,9 @@ function App() {
             <NavBarLinks />
             <div>
               <Switch>
+                <Route exact path="/">
+                  <Redirect to="/home" />
+                </Route>
                 <Route exact path="/home">
                   <HomePage />
                 </Route>

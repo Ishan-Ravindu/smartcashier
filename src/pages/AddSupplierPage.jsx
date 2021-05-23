@@ -2,15 +2,28 @@ import React from "react";
 import BoxLayout from "../componets/BoxLayout";
 import classes from "./AddSupplierPage.module.css";
 import TextInput from "../componets/TextInput";
-import { FaUser, FaBriefcase, FaEnvelope } from "react-icons/fa";
+import {
+  FaUser,
+  FaBriefcase,
+  FaArrowCircleLeft,
+  FaPhoneAlt,
+  FaMailBulk,
+  FaHome,
+} from "react-icons/fa";
 import Button from "../componets/Button";
+import { Link } from "react-router-dom";
 
 export default function AddSupplierPage() {
   return (
     <div className={classes.container}>
       <BoxLayout>
+        <div className={classes.backButton}>
+          <Link to="/supplier">
+            <FaArrowCircleLeft color="white" size={25} />
+          </Link>
+        </div>
         <div className={classes.heading}>
-          <h1>Add Supplier</h1>
+          <span>Add Supplier</span>
         </div>
         <div className={classes.boxContainer}>
           <TextInput
@@ -42,7 +55,7 @@ export default function AddSupplierPage() {
             //   setError("");
             //   setSignUpUserPassword(event.target.value);
             // }}
-            icon={<FaBriefcase />}
+            icon={<FaPhoneAlt />}
             // type="Mobile Number"
             placeholder="Mobile Number"
           />
@@ -53,7 +66,7 @@ export default function AddSupplierPage() {
             //   setError("");
             //   setSignUpUserPassword(event.target.value);
             // }}
-            icon={<FaUser />}
+            icon={<FaMailBulk />}
             // type="Email"
             placeholder="Email"
           />
@@ -64,7 +77,7 @@ export default function AddSupplierPage() {
             //   setError("");
             //   setSignUpUserPassword(event.target.value);
             // }}
-            icon={<FaBriefcase />}
+            icon={<FaHome />}
             // type="Address"
             placeholder="Address"
           />

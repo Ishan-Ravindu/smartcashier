@@ -13,4 +13,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.backButton {
+  padding: 10px 0 0 50px;
 }
